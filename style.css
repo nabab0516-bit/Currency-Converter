@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Tomar portfolio style background */
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #fdf6e8;
+  padding: 20px;
+}
+
+.container {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(255,255,255,0.6) inset;
+  border: 1px solid rgba(255,255,255,0.7);
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #1a3c34;
+  letter-spacing: -0.5px;
+}
+
+form p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5a55;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.amount input {
+  width: 100%;
+  height: 58px;
+  border: 2px solid #e8ddd0;
+  border-radius: 14px;
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #fffcf7;
+  outline: none;
+  transition: 0.3s;
+  color: #1a3c34;
+}
+
+.amount input:focus {
+  border-color: #7a9b8a;
+  box-shadow: 0 0 0 4px rgba(122, 155, 138, 0.15);
+  background: #fff;
+}
+
+.dropdown {
+  display: flex;
+  margin-top: 22px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  background: #fffcf7;
+  border: 2px solid #e8ddd0;
+  border-radius: 14px;
+  padding: 8px 12px;
+  width: 125px;
+  transition: 0.3s;
+}
+
+.select-container:hover {
+  border-color: #7a9b8a;
+}
+
+.select-container img {
+  width: 28px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.select-container select {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 8px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  color: #1a3c34;
+}
+
+.dropdown i {
+  font-size: 20px;
+  color: #1a3c34;
+  cursor: pointer;
+  background: #e8f0e8;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  margin-top: 18px;
+  border: 1px solid #c5d8c8;
+}
+
+.dropdown i:hover {
+  transform: rotate(180deg) scale(1.1);
+  background: #1a3c34;
+  color: #fdf6e8;
+}
+
+.msg {
+  margin: 26px 0;
+  background: linear-gradient(135deg, #f0f5f0, #fdf6e8);
+  padding: 16px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a3c34;
+  border: 1.5px dashed #a8c0b0;
+  letter-spacing: 0.3px;
+}
+
+form button {
+  width: 100%;
+  height: 58px;
+  border: none;
+  background: #1a3c34;
+  color: #fdf6e8;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(26, 60, 52, 0.25);
+  letter-spacing: 0.5px;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  background: #234d43;
+  box-shadow: 0 14px 28px rgba(26, 60, 52, 0.35);
+}
+
+form button:active {
+  transform: translateY(0px);
+}
